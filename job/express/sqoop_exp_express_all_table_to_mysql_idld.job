@@ -1,0 +1,3 @@
+type=command
+command=sh /www/data-analysis/sqoop_exp/express/sqoop_exp_express_all_table_to_mysql_idld.sh
+dependencies=spark_sql_express_num_abnormality_idld

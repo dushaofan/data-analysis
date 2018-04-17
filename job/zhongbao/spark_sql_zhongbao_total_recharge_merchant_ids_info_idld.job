@@ -1,0 +1,3 @@
+type=command
+command=sh /www/data-analysis/spark_sql/zhongbao/spark_sql_zhongbao_total_recharge_merchant_ids_info_idld.sh
+dependencies=sqoop_imp_bas_zhongbao_all_tables_idld

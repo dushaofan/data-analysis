@@ -1,0 +1,3 @@
+type=command
+command=sh /www/data-analysis/mongo/express/mongo_employeeentity_idld.sh
+dependencies=mongo_alismsrecordentity

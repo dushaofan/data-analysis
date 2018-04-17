@@ -1,0 +1,7 @@
+.idea/
+dev
+qa
+pre
+master
+spark_sql/test/derby.log
+sqoop_imp/test/QueryResult.java

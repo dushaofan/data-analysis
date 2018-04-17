@@ -1,0 +1,3 @@
+type=command
+command=sh /www/data-analysis/spark_sql/express/spark_sql_bas_storeentity_and_ues_create_date_idld.sh
+dependencies=mongo_waybillsentity

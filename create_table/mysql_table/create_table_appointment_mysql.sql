@@ -1,0 +1,28 @@
+create database report character set utf8;;
+CREATE TABLE `appointment_order_status_info` (
+  `id` int(11) NOT NULL AUTO_INCREMENT COMMENT '自增ID',
+  `create_time` date DEFAULT NULL COMMENT '创建时间',
+  `province` varchar(255) DEFAULT NULL COMMENT '订单省份',
+  `city` varchar(255) DEFAULT NULL COMMENT '订单城市',
+  `create_order` int(11) DEFAULT NULL COMMENT '创建单量',
+  `big_bag` int(11) DEFAULT NULL COMMENT '大件包裹',
+  `common_bag` int(11) DEFAULT NULL COMMENT '普通包裹',
+  `init_order` int(11) DEFAULT NULL COMMENT '初始化,待支付状态',
+  `cancel_order` int(11) DEFAULT '0' COMMENT '取消单量',
+  `waiting_grab_order` int(11) DEFAULT '0' COMMENT '待接单量',
+  `waiting_pick_order` int(11) DEFAULT '0' COMMENT '待取单量',
+  `deliverying_order` int(11) DEFAULT '0' COMMENT '进行中单量',
+  `close_order` int(11) DEFAULT '0' COMMENT '关闭单量',
+  `finish_order` int(11) DEFAULT '0' COMMENT '完成单量',
+  `other_order` int(11) DEFAULT '0' COMMENT '其他单量',
+  `grab_overtime_cancel` int(11) DEFAULT '0' COMMENT '超时未接单取消',
+  `grab_sender_cancel` int(11) DEFAULT '0' COMMENT '未接单时用户主动取消',
+  `pay_overtime_cancel` int(11) DEFAULT '0' COMMENT '支付超时取消',
+  `admin_cancel` int(11) DEFAULT '0' COMMENT '后台取消',
+  `pay_sender_cancel` int(11) DEFAULT '0' COMMENT '未支付主动取消',
+  `pick_rider_cancel` int(11) DEFAULT '0' COMMENT '骑手主动取消',
+  `store_cancel` int(11) DEFAULT '0' COMMENT '门店主动取消',
+  `other_cancel` int(11) DEFAULT '0' COMMENT '其他取消',
+  PRIMARY KEY (`id`),
+  KEY `index_name` (`create_time`)
+) ENGINE=InnoDB AUTO_INCREMENT=19 DEFAULT CHARSET=utf8;
