@@ -1,12 +1,12 @@
 tbb_account_IP=jdbc:mysql://rm-uf6swef36618k4m3s.mysql.rds.aliyuncs.com:3306/tbb_account_uat
-tbb_account_user=uat
-tbb_account_pw=uat_root
+tbb_account_USER=uat
+tbb_account_PW=uat_root
 tubobo_legwork_IP=jdbc:mysql://rm-uf6swef36618k4m3s.mysql.rds.aliyuncs.com:3306/tubobo_legwork_uat
 tubobo_legwork_USER=uat
 tubobo_legwork_PW=uat_root
 tubobo_merchant_IP=jdbc:mysql://rm-uf6swef36618k4m3s.mysql.rds.aliyuncs.com:3306/tubobo_merchant_uat
-tubobo_merchant_user=uat
-tubobo_merchant_pw=uat_root
+tubobo_merchant_USER=uat
+tubobo_merchant_PW=uat_root
 tubobo_notity_IP=jdbc:mysql://rm-uf6swef36618k4m3s.mysql.rds.aliyuncs.com:3306/tubobo_notify_uat
 tubobo_notity_USER=uat
 tubobo_notity_PW=uat_root
