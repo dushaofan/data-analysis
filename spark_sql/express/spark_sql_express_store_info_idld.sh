@@ -100,16 +100,16 @@ join
 left join
 (
 select
-to_date(a.createDate) as createDate 
+to_date(a.createDate) as createDate,
 a.belongStore,
 count(case when to_date(a.createDate)='${start_date}' then '1' end) as expressInNum,
-count(case when to_date(a.createDate)=to_date(a.inTime) and to_date(a.createDate)=to_date(a.signTime) then '1' end) as todayExpressSignNum,	
-count(case when to_date(a.createDate)=to_date(a.signTime) then '1' end) as expressSignNum,	
+count(case when to_date(a.createDate)=to_date(a.inTime) and to_date(a.createDate)=to_date(a.signTime) then '1' end) as todayExpressSignNum,     
+count(case when to_date(a.createDate)=to_date(a.signTime) then '1' end) as expressSignNum,      
 count(case when a.createDate>='2017-10-01' and a.createDate<='${start_old_time}' and 
 (a.waybillStatus='1' or a.signTime>='${start_old_time}' or to_date(a.outTime)>='${start_old_time}') 
-then 'stagnationNum' end) as stagnationNum	
+then 'stagnationNum' end) as stagnationNum      
 from 
-(select to_date(createDate),inTime,signTime,outTime,belongStore,waybillStatus from ds_tubobo_express.bas_waybillsentity_pd)a 
+(select createDate,inTime,signTime,outTime,belongStore,waybillStatus from ds_tubobo_express.bas_waybillsentity_pd)a 
 left join 
 (select storeid,province,city,storeStatus,create_date from da_tubobo_express.bas_storeentity_and_ues_create_date 
 where day='${start_date}' and create_date='${start_date}' and storeStatus='SUCCESS')b on a.belongStore=b.storeid
@@ -153,13 +153,13 @@ b.expressCompany,
 a.belongStore,
 a.createdate
 from 
-(select count(1),belongStore,to_date(createDate) as createdate from ds_tubobo_express.bas_waybillsentity_pd where day='${start_date}'
+(select count(1),belongStore,to_date(createDate) as createdate from ds_tubobo_express.bas_waybillsentity_pd where to_date(createDate)='${start_date}'
 group by belongStore,to_date(createDate) having count(1)>20) a
 join
 (select expressCompany,belongStore,to_date(createDate) as createdate 
-from ds_tubobo_express.bas_waybillsentity_pd where day='${start_date}' group by expressCompany,belongStore,to_date(createDate)) b
+from ds_tubobo_express.bas_waybillsentity_pd where to_date(createDate)='${start_date}' group by expressCompany,belongStore,to_date(createDate)) b
 on a.belongStore=b.belongStore and a.createdate=b.createdate)aa
  join 
 (select companyId,companyName from ds_tubobo_express.bas_expresscompanyentity_pd where day='${start_date}') c on aa.expressCompany=c.companyId
  group by aa.createdate,aa.belongStore)cc 
-on aaa.create_date=cc.createdate and cc.belongStore=aaa.storeid;"
+ on aaa.create_date=cc.createdate and cc.belongStore=aaa.storeid;"
