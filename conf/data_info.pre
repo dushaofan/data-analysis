@@ -34,4 +34,4 @@ reoportdata_mysql_url=rm-uf6swef36618k4m3s.mysql.rds.aliyuncs.com
 #test配置
 test_ip=jdbc:mysql://172.19.203.249/test
 test_user=root
-test_user_pw=
+test_user_pw=Root-123
