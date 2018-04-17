@@ -23,8 +23,8 @@ mongo_db=express-admin
 mongo_tusheng_IP=
 mongo_tusheng_USER=
 mongo_tusheng_PW=
-sqoop_exp_express_IP=jdbc:mysql://rm-uf6piwo3s000100ki.mysql.rds.aliyuncs.com:3306/express_reportdata?useUnicode=true&characterEncoding=utf-8
-sqoop_exp_zhongbao_IP=jdbc:mysql://rm-uf6piwo3s000100ki.mysql.rds.aliyuncs.com:3306/zhongbao_reportdata?useUnicode=true&characterEncoding=utf-8
+sqoop_exp_express_IP=jdbc:mysql://rm-uf6piwo3s000100ki.mysql.rds.aliyuncs.com:3306/report?useUnicode=true&characterEncoding=utf-8
+sqoop_exp_zhongbao_IP=jdbc:mysql://rm-uf6piwo3s000100ki.mysql.rds.aliyuncs.com:3306/report?useUnicode=true&characterEncoding=utf-8
 sqoop_exp_IP=jdbc:mysql://rm-uf6piwo3s000100ki.mysql.rds.aliyuncs.com:3306/report?useUnicode=true&characterEncoding=utf-8
 sqoop_exp_USER=report
 sqoop_exp_PW=dswybs@#qs8

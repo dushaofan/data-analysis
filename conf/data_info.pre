@@ -24,8 +24,8 @@ mongo_tusheng_IP=
 mongo_tusheng_USER=
 mongo_tusheng_PW=
 sqoop_exp_IP=jdbc:mysql://rm-uf6swef36618k4m3s.mysql.rds.aliyuncs.com:3306/reportdata?useUnicode=true&characterEncoding=utf-8
-sqoop_exp_express_IP=jdbc:mysql://rm-uf6swef36618k4m3s.mysql.rds.aliyuncs.com:3306/express_reportdata?useUnicode=true&characterEncoding=utf-8
-sqoop_exp_zhongbao_IP=jdbc:mysql://rm-uf6swef36618k4m3s.mysql.rds.aliyuncs.com:3306/zhongbao_reportdata?useUnicode=true&characterEncoding=utf-8
+sqoop_exp_express_IP=jdbc:mysql://rm-uf6swef36618k4m3s.mysql.rds.aliyuncs.com:3306/reportdata?useUnicode=true&characterEncoding=utf-8
+sqoop_exp_zhongbao_IP=jdbc:mysql://rm-uf6swef36618k4m3s.mysql.rds.aliyuncs.com:3306/reportdata?useUnicode=true&characterEncoding=utf-8
 sqoop_exp_USER=reportdata
 sqoop_exp_PW=dswybs@#qs8
 spark_url=spark://172.19.203.249:7077
