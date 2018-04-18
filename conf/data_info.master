@@ -1,7 +1,7 @@
-tbb_account_IP=jdbc:mysql://rm-uf659r62olq7jk84m.mysql.rds.aliyuncs.com:3306/tbb_account?characterEncoding=utf-8
+tbb_account_IP=jdbc:mysql://rm-uf659r62olq7jk84m.mysql.rds.aliyuncs.com:3306/tbb_account?useUnicode=true&characterEncoding=utf-8
 tbb_account_USER=tbb_account
 tbb_account_PW=tbb_account_root
-tubobo_legwork_IP=jdbc:mysql://rm-uf659r62olq7jk84m.mysql.rds.aliyuncs.com:3306/tubobo_legwork?characterEncoding=utf-8
+tubobo_legwork_IP=jdbc:mysql://rm-uf659r62olq7jk84m.mysql.rds.aliyuncs.com:3306/tubobo_legwork?useUnicode=true&characterEncoding=utf-8
 tubobo_legwork_USER=tubobo_legwork
 tubobo_legwork_PW=tubobo_legwork_root
 tubobo_merchant_IP=jdbc:mysql://rm-uf6piwo3s000100ki.mysql.rds.aliyuncs.com:3306/tubobo_merchant?useUnicode=true&characterEncoding=utf-8
